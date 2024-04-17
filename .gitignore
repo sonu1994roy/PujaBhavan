@@ -6,7 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-clint/node_modules
+clint
 node_modules
 dist
 dist-ssr

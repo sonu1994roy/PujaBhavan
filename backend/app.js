@@ -14,10 +14,10 @@ app.use('/api/v1',user)
 
 
 
-app.use(express.static(path.join(__dirname, '../clint/dist')))
-app.get('*' , (req, res) =>{
-    res.sendFile(path.resolve(__dirname , '../clint/dist/index.html'))
-})
+// app.use(express.static(path.join(__dirname, '../clint/dist')))
+// app.get('*' , (req, res) =>{
+//     res.sendFile(path.resolve(__dirname , '../clint/dist/index.html'))
+// })
 
 // for 404 routes  Errors  and retrun normal pages for show 404 page
 app.use(function (req, res) {
