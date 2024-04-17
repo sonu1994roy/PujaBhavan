@@ -758,18 +758,18 @@ function index() {
                                 <div className="swiper">
                                     <div className="swiper-wrapper">
                                         <div className="swiper-slide">
-                                            <p className="text-dark dark:text-white serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" >
+                                            <p className="text-base serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" >
                                                 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
                                             </p>
                                             <div className="flex my-4 justify-center items-center">
-                                                <button className=" bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
+                                                <button className=" text-white bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
 
                                                 >JD</button>
-                                                <button  className="bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
+                                                <button  className=" text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
 
                                                 >WD</button>
                                                 <button
-                                                    className="bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
+                                                    className=" text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
 
                                                 >JW</button>
                                             </div>
