@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-  import {ContactInputBox ,ContactTextArea} from '../componante/formComponate/input'
+import { ContactInputBox, ContactTextArea } from '../componante/formComponate/input'
 function index() {
     return (
         <>
@@ -10,27 +10,29 @@ function index() {
                         type="video/mp4" autoPlay muted loop></video>
                 </div>
                 <div className="video-content space-y-2 z-10">
-                    <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10">
-                        <div>
-                            <h1 className="mb-2 md:text-3xl text-base font-bold text-white"><span className="text-green-500">Hi,</span> I'm Full Stack Developer</h1>
-                            <p className="mb-6 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut excepturi magnam enim officiis facilis numquam corporis quos accusantium tempora, dolores quod cum facere architecto soluta atque corrupti a alias perferendis.</p>
-                            <div className="flex justify-center space-x-5">
-                                <button className="flex w-full items-center justify-center gap-1 rounded-2xl bg-them-primary md:p-5 md:py-3 font-semibold text-white hover:bg-rose-700">
-                                    Follow
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-2 w-2  md:h-6 md:w-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-                                    </svg>
-                                </button>
-                                <button className="flex w-full items-center justify-center gap-2 text-dark rounded-2xl bg-gray-900 md:p-5 md:py-3 font-semibold">
-                                    Resume
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className=" h-2 w-2 md:h-6 md:w-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                    </svg>
-                                </button>
+                    <div className='container'>
+                        <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10">
+                            <div>
+                                <h1 className="mb-2 md:text-3xl text-base font-bold text-white"><span className="text-green-500">Hi,</span> I'm Full Stack Developer</h1>
+                                <p className="mb-6 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut excepturi magnam enim officiis facilis numquam corporis quos accusantium tempora, dolores quod cum facere architecto soluta atque corrupti a alias perferendis.</p>
+                                <div className="flex justify-center space-x-5">
+                                    <button className="flex w-full items-center justify-center gap-1 rounded-2xl bg-them-primary md:p-5 md:py-3 font-semibold text-white hover:bg-rose-700">
+                                        Follow
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-2 w-2  md:h-6 md:w-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                        </svg>
+                                    </button>
+                                    <button className="flex w-full items-center justify-center gap-2 text-dark rounded-2xl bg-gray-900 md:p-5 md:py-3 font-semibold">
+                                        Resume
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className=" h-2 w-2 md:h-6 md:w-6">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <div className="d-block m-auto">
-                            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className=" md:size-80 size-40 rounded-full " />
+                            <div className="d-block m-auto">
+                                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className=" md:size-80 size-40 rounded-full " />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -668,10 +670,45 @@ function index() {
                 </div>
             </section>
 
+            {/* type of category */}
+            <section className=" overflow-hidden bg-white py-2 dark:bg-dark lg:py-[10px]">
+                <div className='container'>
 
+                    <div className="max-w-screen-2xl mx-auto px-4 py-2 lg:py-24 relative bg-white">
+                        <div className="flex flex-col md:flex-row gap-2">
+                            <div className="flex flex-1 flex-col">
+                                <div className="flex flex-1 flex-col">
+                                    <h2 className="mb-1 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                                        Gallery
+                                    </h2>
+                                    <span className="mb-1 block text-base font-semibold text-primary">
+                                        Explore the Beauty Within: A Gallery of Captivating Artistry
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="flex flex-1 flex-col">
+                                <div className="flex flex-1 flex-col gap-2">
+                                    <div className='w-full'>
+                                        <img className="object-cover h-full w-full" src='https://images.unsplash.com/photo-1666147775717-65fa1fe0c47b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400' alt='' />
+                                        <div className='text-start px-4 py-4'>
+                                            <h5 className="mb-1 text-[16px] font-bold  text-dark dark:text-white sm:text-[12px] lg:text-[14px] xl:text-[18px]">
+                                                Gallery
+                                            </h5>
+                                            <span className="mb-1 block text-base font-semibold text-primary">
+                                                Explore the Beauty Within: A Gallery of Captivating Artistry
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             {/* galery */}
             <section className=" overflow-hidden bg-white py-2 dark:bg-dark lg:py-[10px]">
-                <div>
+                <div className='container'>
                     <h2 className="mb-1 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                         Gallery
                     </h2>
@@ -708,12 +745,12 @@ function index() {
 
             {/* testimonials */}
             <section className="fixed-bg bg-1 ">
-
-                    <div className="block m-auto md:w-1/2">
+                <div className='container'>
+                    <div className="block m-auto w-full md:w-1/2">
                         <div className="flex flex-col h-full relative">
 
                             <div className="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="text-indigo-200 fill-current w-12 h-12 md:w-16 md:h-16" viewBox="0 0 24 24">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="text-dark dark:text-white fill-current w-12 h-12 md:w-16 md:h-16" viewBox="0 0 24 24">
                                     <path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z" /></svg>
                             </div>
 
@@ -721,23 +758,18 @@ function index() {
                                 <div className="swiper">
                                     <div className="swiper-wrapper">
                                         <div className="swiper-slide">
-                                            <p className="text-white serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" >
+                                            <p className="text-dark dark:text-white serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" >
                                                 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
                                             </p>
                                             <div className="flex my-4 justify-center items-center">
-                                                <button
-
-                                                    className="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
+                                                <button className=" bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
 
                                                 >JD</button>
-                                                <button
-
-                                                    className="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
+                                                <button  className="bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
 
                                                 >WD</button>
                                                 <button
-
-                                                    className="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
+                                                    className="bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
 
                                                 >JW</button>
                                             </div>
@@ -775,11 +807,11 @@ function index() {
 
                         </div>
                     </div>
-
+                </div>
             </section>
             {/* contact us */}
-            <section className=" overflow-hidden bg-white py-2 dark:bg-dark lg:py-[10px]">
-                <div className="container">
+            <section className="bg-animated-area overflow-hidden">
+                <div className="container py-14">
                     <div className="-mx-4 flex flex-wrap lg:justify-between">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
                             <div className="mb-12 max-w-[570px] lg:mb-0">
@@ -1730,6 +1762,18 @@ function index() {
                         </div>
                     </div>
                 </div>
+                <ul className="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </section>
 
         </>
