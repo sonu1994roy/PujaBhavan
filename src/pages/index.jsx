@@ -1,6 +1,15 @@
 /* eslint-disable react/prop-types */
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import { ContactInputBox, ContactTextArea } from '../componante/formComponate/input'
-function index() {
+function Index() {
+
     return (
         <>
             <section className="relative   h-[80vh] flex flex-col items-center justify-center text-center text-white ">
@@ -13,8 +22,8 @@ function index() {
                     <div className='container'>
                         <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-10 md:px-10">
                             <div>
-                                <h1 className="mb-2 md:text-3xl text-base font-bold text-white"><span className="text-green-500">Hi,</span> I'm Full Stack Developer</h1>
-                                <p className="mb-6 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut excepturi magnam enim officiis facilis numquam corporis quos accusantium tempora, dolores quod cum facere architecto soluta atque corrupti a alias perferendis.</p>
+                                <h1 className="mb-2 md:text-3xl text-base font-bold text-white"><span className="text-green-500"> Namaste!</span> I'm Acharya Roshan Mishra.</h1>
+                                <p className="mb-6 text-white"> With deep devotion and expertise, we offer Puja Archana services, ensuring each ritual is performed with care. Join us on a spiritual journey, embracing Hindu traditions and experiencing divine blessing.</p>
                                 <div className="flex justify-center space-x-5">
                                     <button className="flex w-full items-center justify-center gap-1 rounded-2xl bg-them-primary md:p-5 md:py-3 font-semibold text-white hover:bg-rose-700">
                                         Follow
@@ -22,37 +31,36 @@ function index() {
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
                                         </svg>
                                     </button>
-                                    <button className="flex w-full items-center justify-center gap-2 text-dark rounded-2xl bg-gray-900 md:p-5 md:py-3 font-semibold">
-                                        Resume
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className=" h-2 w-2 md:h-6 md:w-6">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                                        </svg>
+                                    <button className="flex w-full items-center justify-center gap-2 text-gray-600 rounded-2xl bg-them-yellow md:p-5 md:py-3 font-semibold">
+                                        Contact
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" strokeWidth="1.5" stroke="currentColor" className="h-2 w-2 md:h-6 md:w-6"><path d="M384 48c8.8 0 16 7.2 16 16V448c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H384zM96 0C60.7 0 32 28.7 32 64V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H96zM240 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16H336c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80H208zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V80zM496 192c-8.8 0-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16v64c0 8.8 7.2 16 16 16s16-7.2 16-16V336z" /></svg>
                                     </button>
+
                                 </div>
                             </div>
                             <div className="d-block m-auto">
-                                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" className=" md:size-80 size-40 rounded-full " />
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ohMdxi4Ta-31vYGCQWHDf16Or2YF8YQLyNaTBXDAnQ&s" alt="" className=" md:size-80 size-40 rounded-full " />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="overflow-hidden pt-4 pb-4 lg:pt-[10px] lg:pb-[10px] bg-white dark:bg-dark">
-                <div className="container mx-auto">
+            <section id='aboutUs' className="overflow-hidden pt-4 pb-4 lg:pt-[10px] lg:pb-[10px] bg-white dark:bg-dark">
+                <div className="container mx-auto pt-3">
                     <div className="flex flex-wrap items-center justify-between -mx-4">
                         <div className="w-full px-4 lg:w-6/12">
                             <div className="flex items-center -mx-3 sm:-mx-4">
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="py-3 sm:py-4">
                                         <img
-                                            src="https://i.ibb.co/gFb3ns6/image-1.jpg"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsjGFkSUSGu2JjY6zZWIaRGOKUrdnMbsWazkfZw3sTQ&s"
                                             alt=""
                                             className="w-full rounded-2xl"
                                         />
                                     </div>
                                     <div className="py-3 sm:py-4">
                                         <img
-                                            src="https://i.ibb.co/rfHFq15/image-2.jpg"
+                                            src="https://t3.ftcdn.net/jpg/06/55/10/42/360_F_655104213_GxO8HYfl8LNyc8jw77UhvmekmGMTxx6R.jpg"
                                             alt=""
                                             className="w-full rounded-2xl"
                                         />
@@ -61,7 +69,7 @@ function index() {
                                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                                     <div className="relative z-10 my-4">
                                         <img
-                                            src="https://i.ibb.co/9y7nYCD/image-3.jpg"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUEHJ9N8jMKJP5G6ePjH3-PErWP8fPK4IWGxdrQ-yS_V0-NRlMYnEgU3Gyzhidk1VJKr4&usqp=CAU"
                                             alt=""
                                             className="w-full rounded-2xl"
                                         />
@@ -671,36 +679,54 @@ function index() {
             </section>
 
             {/* type of category */}
-            <section className=" overflow-hidden bg-white py-2 dark:bg-dark lg:py-[10px]">
+            <section id='services' className=" overflow-hidden bg-white py-2 dark:bg-dark lg:py-[10px]">
                 <div className='container'>
-
                     <div className="max-w-screen-2xl mx-auto px-4 py-2 lg:py-24 relative bg-white">
-                        <div className="flex flex-col md:flex-row gap-2">
-                            <div className="flex flex-1 flex-col">
-                                <div className="flex flex-1 flex-col">
-                                    <h2 className="mb-1 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                                        Gallery
-                                    </h2>
-                                    <span className="mb-1 block text-base font-semibold text-primary">
-                                        Explore the Beauty Within: A Gallery of Captivating Artistry
-                                    </span>
+                        <div className="flex flex-col md:flex-row gap-2 w-full">
+
+                            <div className="flex flex-1 flex-col w-full md:w-1/2">
+                                <h2 className="mb-1 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                                    Type Of Services
+                                </h2>
+                                <span className="mb-1 block text-base font-semibold text-primary">
+                                    Sacred Offerings for Spiritual Harmony
+                                </span>
+                                <div>
+
                                 </div>
                             </div>
-                            <div className="flex flex-1 flex-col">
-                                <div className="flex flex-1 flex-col gap-2">
-                                    <div className='w-full'>
-                                        <img className="object-cover h-full w-full" src='https://images.unsplash.com/photo-1666147775717-65fa1fe0c47b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400' alt='' />
-                                        <div className='text-start px-4 py-4'>
-                                            <h5 className="mb-1 text-[16px] font-bold  text-dark dark:text-white sm:text-[12px] lg:text-[14px] xl:text-[18px]">
-                                                Gallery
-                                            </h5>
-                                            <span className="mb-1 block text-base font-semibold text-primary">
-                                                Explore the Beauty Within: A Gallery of Captivating Artistry
-                                            </span>
-                                        </div>
-                                    </div>
 
-                                </div>
+                            <div className="flex flex-1 flex-col w-full md:w-1/2">
+
+                                <Swiper
+                                    // install Swiper modules
+                                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                    spaceBetween={20}
+                                    slidesPerView={1}
+                                    navigation
+                                    className='w-full'
+                                    pagination={{ clickable: true }}
+                                    scrollbar={{ draggable: true }}
+                                    onSwiper={(swiper) => console.log(swiper)}
+                                    onSlideChange={() => console.log('slide change')}
+                                >
+                                    <SwiperSlide>
+                                        <div className='w-full'>
+                                            <img className="object-cover w-full" src='https://images.unsplash.com/photo-1666147775717-65fa1fe0c47b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400' alt='' />
+                                            <div className='text-start px-4 py-4'>
+                                                <h5 className="mb-1 text-[16px] font-bold  text-dark dark:text-white sm:text-[12px] lg:text-[14px] xl:text-[18px]">
+                                                    pujabhavn
+                                                </h5>
+                                                <span className="mb-1 block text-base font-semibold text-primary">
+                                                    Explore the Beauty Within: A Gallery of Captivating Artistry
+                                                </span>
+                                            </div>
+                                        </div></SwiperSlide>
+                                    <SwiperSlide>Slide 3</SwiperSlide>
+                                </Swiper>
+
+
+
                             </div>
                         </div>
                     </div>
@@ -719,22 +745,22 @@ function index() {
                         <div className="flex flex-col md:flex-row gap-2">
                             <div className="flex flex-1 flex-col">
                                 <div className="flex flex-1 flex-col">
-                                    <img className="object-cover h-full" src='https://images.unsplash.com/photo-1664764119004-999a3f80a1b8?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDEzMDc&ixlib=rb-4.0.3&q=80' alt='' />
+                                    <img className="object-cover h-full" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-g8_zYFSHDIJK0_bKBlBojy_i4h23c5BPdfdwAYcX2A&s' alt='' />
                                 </div>
                             </div>
                             <div className="flex flex-1">
                                 <div className="grid grid-cols-2 gap-2">
                                     <div>
-                                        <img className="object-cover h-full" src='https://images.unsplash.com/photo-1666147775717-65fa1fe0c47b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400' alt='' />
+                                        <img className="object-cover h-full w-full" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9RebaxA00OhbDfpntTeuPV8rE8ZzkPsVkh4aCRWU4OQ&s' alt='' />
                                     </div>
                                     <div>
-                                        <img className="object-cover h-full" src='https://images.unsplash.com/photo-1665561741359-7af2d2fdc395?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400' alt='' />
+                                        <img className="object-cover h-full w-full" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAPNfkcBC9miT8a2ffT54cVQGOHkcsBZVK5wAAjpDEpQ&s' alt='' />
                                     </div>
                                     <div>
-                                        <img className="object-cover h-full" src='https://images.unsplash.com/photo-1665391837905-74d250172dd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400' alt='' />
+                                        <img className="object-cover h-full w-full" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Ke7lmx_C36mckmbQtyCVL4uNjdnsG8kPIiIgVVlw7A&s' alt='' />
                                     </div>
                                     <div>
-                                        <img className="object-cover h-full" src='https://images.unsplash.com/photo-1666303349374-c4cf8bc9eaaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjY2NDMxNzc&ixlib=rb-4.0.3&q=80&w=400' alt='' />
+                                        <img className="object-cover h-full w-full" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoJRn1SuF8Thh_VxvC9Oz_JmSg9SHv7kpiNVhtCbgueg&s' alt='' />
                                     </div>
                                 </div>
                             </div>
@@ -748,66 +774,50 @@ function index() {
                 <div className='container'>
                     <div className="block m-auto w-full md:w-1/2">
                         <div className="flex flex-col h-full relative">
-                    <h2 className="mb-1 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
-                       testimonials
-                    </h2>
-                    <span className="mb-1 block text-base font-semibold text-primary">
-                        Explore the Beauty Within: A Gallery of Captivating Artistry
-                    </span>
+                            <h2 className="mb-1 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                                testimonials
+                            </h2>
+                            <span className="mb-1 block text-base font-semibold text-primary">
+                                Explore the Beauty Within: A Gallery of Captivating Artistry
+                            </span>
 
                             <div className="h-full relative z-10">
-                                <div className="swiper">
-                                    <div className="swiper-wrapper">
-                                        <div className="swiper-slide">
-                                            <div className="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="text-dark dark:text-white fill-current w-12 h-12 md:w-16 md:h-16" viewBox="0 0 24 24">
-                                                    <path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z" /></svg>
-                                            </div>
-
-                                            <p className="text-dark dark:text-white serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" >
-                                                Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-                                            </p>
-                                            <div className="flex my-4 justify-center items-center">
-                                                <button className=" text-white bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
-
-                                                >JD</button>
-                                                <button className=" text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
-
-                                                >WD</button>
-                                                <button
-                                                    className=" text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
-
-                                                >JW</button>
-                                            </div>
-
-                                            {/* <div className="flex justify-center px-6 pt-2 pb-6 md:py-6">
-                                                <div className="text-center" >
-                                                    <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">John Doe</h2>
-                                                    <small className="text-gray-500 text-xs md:text-sm truncate">CEO, ABC Inc.</small>
-                                                </div>
-
-                                                <div className="text-center" >
-                                                    <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">Winter Doe</h2>
-                                                    <small className="text-gray-500 text-xs md:text-sm truncate">CTO, XYZ Corp.</small>
-                                                </div>
-
-                                                <div className="text-center" >
-                                                    <h2 className="text-sm md:text-base font-bold text-gray-700 leading-tight">John Wick</h2>
-                                                    <small className="text-gray-500 text-xs md:text-sm truncate">Product Manager, Fake Corp.</small>
-                                                </div>
-                                            </div> */}
-                                        </div>
+                                <Swiper
+                                    // install Swiper modules
+                                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                                    spaceBetween={50}
+                                    slidesPerView={1}
+                                    navigation
+                                    pagination={{ clickable: true }}
+                                    scrollbar={{ draggable: true }}
+                                    onSwiper={(swiper) => console.log(swiper)}
+                                    onSlideChange={() => console.log('slide change')}
+                                >
+                                    <SwiperSlide><div className="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="text-dark dark:text-white fill-current w-12 h-12 md:w-16 md:h-16" viewBox="0 0 24 24">
+                                            <path d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z" /></svg>
                                     </div>
 
-                                    <div className="swiper-pagination"></div>
+                                        <p className="text-dark dark:text-white serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl" >
+                                            Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+                                        </p>
+                                        <div className="flex my-4 justify-center items-center">
+                                            <button className=" text-white bg-them-primary text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
 
+                                            >JD</button>
+                                            <button className=" text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-indigo-600 rounded-full mx-2"
 
-                                    <div className="swiper-button-prev"></div>
-                                    <div className="swiper-button-next"></div>
+                                            >WD</button>
+                                            <button
+                                                className=" text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-indigo-600 rounded-full mx-2"
 
-
-                                    <div className="swiper-scrollbar"></div>
-                                </div>
+                                            >JW</button>
+                                        </div></SwiperSlide>
+                                    <SwiperSlide>Slide 2</SwiperSlide>
+                                    <SwiperSlide>Slide 3</SwiperSlide>
+                                    <SwiperSlide>Slide 4</SwiperSlide>
+                                    ...
+                                </Swiper>
                             </div>
 
 
@@ -816,7 +826,7 @@ function index() {
                 </div>
             </section>
             {/* contact us */}
-            <section className="bg-animated-area overflow-hidden">
+            <section id='contact' className="bg-animated-area overflow-hidden">
                 <div className="container py-14">
                     <div className="-mx-4 flex flex-wrap lg:justify-between">
                         <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -1786,7 +1796,7 @@ function index() {
     )
 }
 
-export default index
+export default Index
 
 
 
